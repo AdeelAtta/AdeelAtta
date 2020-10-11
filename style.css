@@ -1,0 +1,1233 @@
+/*               
+
+                  blue color        #112d4e  
+            light blue color        #3f72af    
+                yellow color        #d4a81e
+
+
+*/
+
+
+
+/*CSS for Desktop View */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+
+
+}
+
+body,
+html {
+
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background-color: #dbe2ef;
+    background: white;
+}
+
+
+.container {
+    width: 100%;
+}
+
+
+.row {
+
+    display: flex;
+}
+
+
+
+
+
+
+/*            Navigation Bar      */
+
+header {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.nav-main {
+    top: 0;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #f9f7f7;
+    align-content: stretch;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    border-bottom: 3px solid silver;
+}
+
+.nav-main img {
+    margin: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out-in;
+}
+
+.btn-toggle-nav {
+    visibility: collapse;
+    width: 60px;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("toggle.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-main ul {
+    visibility: visible;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+    flex: auto;
+}
+
+.nav-main ul li {
+    padding-left: 50px;
+    list-style: none;
+    line-height: 60px;
+}
+
+.nav-main ul li a {
+
+    display: block;
+    margin: 10px 0 0px 0;
+    height: 50%;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: arial;
+    color: #111;
+    font-size: 16px;
+    transition: all 0.3s ease-out-in;
+}
+
+.nav-main ul li a:hover {
+
+    font-weight: bold;
+    color: #d4a81e;
+
+
+}
+
+.nav-main ul li a::after {
+    content: '';
+    margin: -5px auto;
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #d4a81e;
+    transition: width .3s;
+    color: #f97304;
+
+}
+
+.nav-main ul li a:hover::after {
+
+    width: 100%;
+    color: #f97304;
+    /*    transition: width .3s;*/
+
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: calc(100vh - 70px);
+    padding: 0;
+    background-color: #112e4f;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    visibility: collapse;
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: collapse;
+}
+
+.nav-sidebar li {
+    text-align: justify;
+    padding-left: 15px;
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li span,
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    visibility: collapse;
+}
+
+.nav-sidebar ul li a:hover {
+    background-color: #0c6bb5;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*    Hero Image  */
+
+.hero {
+
+
+    background-image: url("images/uni.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: auto;
+
+}
+
+
+
+
+
+
+
+/*               Section     Links     Start           */
+
+.container .tab-menu {
+    margin: 0 10%;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.container .tab-menu ul {
+    background-color: white;
+    min-width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 10px;
+    margin-top: -65px;
+    padding: 0 5px;
+    box-shadow: 1px 5px 5px #747474;
+
+}
+
+.container .tab-menu ul li {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.container .tab-menu ul li a {
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 900;
+    transition: transform 0.3s;
+}
+
+.container .tab-menu ul li a:hover {
+    transform: scale(1.1);
+}
+
+.container .tab-menu li:nth-child(5),
+.container .row ul li:nth-child(7) {
+    background-color: #112d4e;
+    transform: skew(-30deg);
+    color: #fff;
+}
+
+.container .tab-menu ul li:nth-child(6) {
+    background-color: #d4a81e;
+    transform: skew(-30deg);
+}
+
+.icon img {
+    height: 35px;
+}
+
+.container .tab-menu li:nth-child(5) a,
+.container .tab-menu li:nth-child(7) a,
+.container .tab-menu li:nth-child(6) a {
+    transform: skew(30deg);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*         Section Upcomming Events &     News  Updates   */
+
+.update-section {
+
+    margin-top: 7%;
+    width: 100%;
+    min-height: 500px;
+
+
+
+}
+
+.update-section .container {
+
+    margin: auto;
+    height: 100%;
+
+
+}
+
+.update-section .container .row {
+
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.update-section .container .row .upcomming-events {
+
+    flex: 9;
+    height: 100%;
+    padding: 20px;
+
+}
+
+
+.update-section .container .row h2 {
+
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 15px 0;
+    margin: 0 0 5% 0;
+    background-image: url(images/line.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    color: #112d4e;
+
+}
+
+.update-section .container .row h2 span {
+    color: #3f72af;
+
+}
+
+.update-section .container .row .upcomming-events .event-box {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.update-section .container .row .upcomming-events .event-box img {
+
+    border: 2px solid silver;
+    padding: 5px;
+    margin: 5px;
+    min-width: 40%;
+    min-height: 30%;
+    border-radius: 10%;
+
+}
+
+.update-section .container .row .upcomming-events .event-box .details {
+
+    padding: 10px 20px;
+    height: auto;
+
+}
+
+.update-section .container .row .upcomming-events .event-box .details .title {
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.update-section .container .row .upcomming-events .event-box .details .date {
+
+    font-size: 14px;
+    color: #484848;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+.update-section .container .row .upcomming-events .event-box .details p {
+
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 20px;
+    color: #6F6F6F;
+    text-align: justify;
+}
+
+.update-section .container .row .news-section .news-box {
+
+    min-height: 80%;
+
+
+
+
+}
+
+.update-section .container .row .news-section {
+
+    flex: 4;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.update-section .container .row .news-section .news {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.container .row .news-section .news .date {
+
+
+    background-color: gold;
+    border-radius: 20%;
+    text-align: center;
+    color: #112d4e;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.container .row .news-section .news .date span {
+
+    text-align: center;
+    font-size: 40px;
+    background-color: #3f72af;
+    border-radius: 20%;
+    color: white;
+    padding: 1px 13px 4px 13px;
+}
+
+.container .row .news-section .news .detail {
+
+    flex: 5;
+    padding: 5px 5px 5px 15px;
+}
+
+
+
+/*     Section Course Material/ Books / Notes /Slides / Past Papers     START    */
+
+
+.services {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.services .container {
+    height: auto;
+
+}
+
+.services .container h1 {
+
+    text-align: center;
+    height: auto;
+    
+
+
+
+}
+
+.services .container h1 span {
+    color: #3f72af;
+    width: 90%;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 15px 0;
+    margin: 0px auto 20px;
+    font-size: 40px;
+    background-image: url(images/line.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+
+}
+
+.services .container .row {
+    width: 100%;
+    margin: auto;
+    height:450px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
+
+
+}
+
+.services .container .row .box {
+    flex: 1;
+    width: 25%;
+    height: 700px;
+    text-align: center;
+    padding-top: 70px;  
+}
+
+
+.services .container .row .box:nth-child(1) {
+    background: linear-gradient(hsla(213, 47%, 47%, 0.7), hsla(213, 47%, 47%, 0.7)), url(images/img1.jpg);
+
+}
+
+.services .container .row .box:nth-child(1),
+.services .container .row .box:nth-child(2),
+.services .container .row .box:nth-child(3) {
+    transform: skewY(4deg);
+    margin-top: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services .container .row .box:nth-child(2) {
+    margin: 2.8% 0 0 0;
+    background: linear-gradient(hsla(45, 75%, 47%, 0.7), hsla(55, 60%, 44%, 0.7)), url(images/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.services .container .row .box:nth-child(3) {
+    margin: 4.5% 0 0 0;
+    background: linear-gradient(hsla(195, 61%, 46%, 0.7), hsla(195, 61%, 46%, 0.7)), url(images/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.services .container .row .box:nth-child(4) {
+
+    margin: 2.8% 0 0 0;
+    transform: skewY(-12deg);
+    background: linear-gradient(hsla(350, 97%, 12%, 0.7), hsla(350, 97%, 12%, 0.7)), url(images/img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services .container .row .box .content {
+
+    padding: 20px;
+    transform: skewY(-4deg);
+    
+}
+
+.services .container .row .box:nth-child(1) .content {
+    margin-top: 2%;
+}
+
+.services .container .row .box:nth-child(2) .content {
+    margin-top: -5%;
+}
+
+.services .container .row .box:nth-child(3) .content {
+    margin-top: -12%;
+}
+
+.services .container .row .box:nth-child(4) .content {
+    margin-top: -5%;
+    transform: skewY(12deg);
+}
+
+
+.services .container .row .box .content img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.services .container .row .box h2 span {
+    margin: 30px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.services .container .row .box .content p span {
+    color: #d4a81e;
+    font-size: 100%;
+}
+
+.services .container .row .box:nth-child(2) .content p span {
+    color: #112d4e;
+    font-size: 100%;
+}
+
+
+
+.services .container .row .box .content p {
+    font-size: 100%;
+    color: white;
+    font-weight: 200;
+}
+
+.services .container .row .box .content hr {
+    margin: 15px;
+    border-top: 1px solid white;
+}
+
+
+.services .container .row .box a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.services .container .row .box button {
+    
+   
+    color: #881125;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem .7rem .7rem .9rem;
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+
+.services .container .row .box button:hover {
+    color: #07094a;
+
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+
+
+
+/*           **********Social Colab Account*********               */
+
+.social-colab-account {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+
+
+
+
+}
+
+
+.social-colab-account .container {
+
+    height: 740px;
+    overflow: hidden;
+
+
+}
+
+.social-colab-account .container h1 {
+
+    text-align: center;
+    height: auto;
+    margin-bottom: -10px;
+
+
+}
+
+.social-colab-account .container h1 span {
+    color: #3f72af;
+    width: 90%;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 15px 0;
+    margin: 0px auto 20px;
+    font-size: 40px;
+    background-image: url(images/line.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+
+}
+
+.social-colab-account .container .row {
+
+    width: 100%;
+    margin: auto;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    margin-top: 50px;
+
+
+
+}
+
+.social-colab-account .container .row .flip-box {
+    background-color: transparent;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+
+}
+
+
+.social-colab-account .container .row .flip-box .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+.social-colab-account .container .row .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.social-colab-account .container .row .flip-box .flip-box-inner .flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: transparent;
+    color: black;
+}
+
+.flip-box-front img {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    image-resolution: snap;
+}
+
+.flip-box-back {
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: #112d4e;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+.flip-box-back h1 {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    Footer    */
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    background-color: #112d4e;
+    color: white;
+    background-image: linear-gradient(rgba(17, 45, 78, 0.9), rgba(17, 45, 78, 0.9)), url(images/card1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer .container {
+
+    height: 90%;
+    padding-top: 140px;
+    padding-bottom: 20px;
+
+}
+
+footer .container .row {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+}
+
+footer .container .row .about {
+    flex: 1.5;
+    
+
+}
+
+footer .container .row .quicklinks{
+    
+    display: flex;
+}
+
+footer .container .row .about{
+    
+    text-align: center;
+    
+}
+
+footer .container .row .about p{
+    font-size: 1em;
+    text-align: justify;
+    padding: 0 20px;
+    margin: -6% auto;
+    max-width: 700px;
+    
+    
+}
+footer .container .row .about img,
+.row .about a {
+
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+footer .container .row .navigation,
+.service {
+    min-width: 30px;
+    flex: 1;
+}
+
+footer .container .row h2 {
+    font-family: "Oswald", sans-serif;
+    color: #FF5F21;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-left: 40px;
+
+}
+
+footer .container .row ul li {
+
+    margin-left: 40px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+footer .container .row ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+footer .container .row ul li a:hover {
+
+    color: rgba(255, 33, 33, 0.9);
+    text-decoration: underline;
+}
+
+footer .footer-bottom-area p {
+    padding-top: 20px;
+    padding-bottom: 1px;
+    text-align: center;
+
+}
+
+footer .footer-bottom-area a {
+
+    text-decoration: none;
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS for Mobile View */
+
+@media only screen and (max-width: 1100px) {
+
+
+    .update-section .container .row {
+        display: block;
+    }
+
+    .update-section .container .row .news-section .news {
+        width: 50%;
+
+    }
+
+    .update-section .news-box {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+/*   **************     MAIN Navigation Menu     ***************    */
+     .main-nav {
+        justify-content: space-around;
+    }
+    .nav-main ul {
+        display: none;
+        visibility: collapse;
+    }
+
+    .btn-toggle-nav {
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+    }
+
+    .nav-sidebar ul {
+        visibility: visible;
+    }
+
+    .nav-sidebar {
+        visibility: visible;
+    }
+
+    .nav-sidebar ul li span,
+    .nav-sidebar ul li a {
+        visibility: visible;
+    }
+/********************************/
+    
+    
+/*   **************     Quick TAB Menu    ***************    */     
+ .container .tab-menu{
+        margin: 0;
+        width: 100%; 
+    }    
+/*******************************/       
+    
+    
+/*   **************     Services  /  Academic Resources    ***************    */    
+    .services .container h1{
+        margin-bottom: 20px;
+    }
+    
+    .services .container .row .box .content {
+     padding: 0 5px;
+    }
+    
+    .services .container .row .box h2 span {
+        font-size: 1.15rem;
+    }
+    
+    .services .container .row .box button{
+        
+    padding: .6rem .6rem .6rem .6rem;
+    }
+/********************************/   
+    
+    
+    
+    
+/*   **************     Footer Content    ***************    */      
+
+    footer .container .row {   
+        display: block; 
+        margin: auto;
+    }  
+    
+footer .container .row .quicklinks{
+    margin: 80px auto 0;
+    padding-left: 45px;
+    
+}
+/********************************/
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    
+     
+/*   **************     Quick TAB Menu    ***************    */     
+ .container .tab-menu ul li:nth-child(5) ,
+ .container .tab-menu ul li:nth-child(6) ,
+ .container .tab-menu ul li:nth-child(7) ,
+ .container .tab-menu ul li:nth-child(8){
+
+     display: none;
+     
+    }    
+/*******************************/    
+    
+    .update-section .container .row .upcomming-events{
+        
+        
+    }  
+    
+    .update-section .container .row .upcomming-events .event-box {
+        display: block;
+        text-align: center;
+        
+    }   
+    .update-section .container .row .upcomming-events .event-box img {
+       width: 90%;
+        height: auto;
+    }
+    .update-section .container .row .news-section .news{
+        margin-bottom: 15px;
+    width: 100%;
+        
+    }
+    
+    
+    
+    
+ /*******************************/   
+   
+    .services .container .row{
+        
+     display: block;
+     overflow: visible;
+     height: auto;
+        margin-top: 3em;
+    
+    }
+    .services .container .row .box{
+        
+       width: 100%; 
+        height: 600px;
+       
+       
+        
+    }
+      .services .container .row .box:nth-child(2),
+      .services .container .row .box:nth-child(4){
+        transform: skewY(-4deg);
+    }
+   
+    .services .container .row .box:nth-child(1),
+    .services .container .row .box:nth-child(3){
+        margin-bottom: -4.3em;
+        
+    }
+     .services .container .row .box:nth-child(2){
+        margin-bottom: -5.7em;  
+    }
+    
+    
+    .services .container .row .box:nth-child(2) .content, 
+    .services .container .row .box:nth-child(4) .content{
+        
+        transform: skewY(4deg);
+        
+    } 
+    .services .container .row .box:nth-child(1) .content{
+        margin-top: -2rem;
+    } 
+    .services .container .row .box .content{ 
+        width: 90%;
+        height: 500px;
+        margin: auto;
+        padding-top: 5rem;
+        
+        
+    }
+    .services .container h1 span{
+        font-size:35px; 
+    }
+   
+    .services .container .row .box .content img{
+        height: 95px;
+        width: 95px;
+       
+        
+    }
+   
+    .services .container .row .box .content h2 {
+        margin-top: 20px;
+        
+    }
+    .services .container .row .box .content h2 span{
+         font-size: 1.3em       
+   
+    }
+    
+    .services .container .row .box .content p{
+        height: auto;
+        
+       
+        font-size: 21px;
+        
+    }
+  
+    .services .container .row .box button{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    
+    footer .container .row .quicklinks{
+        
+        padding: 0;
+    }
+  
+    
+    
+}
