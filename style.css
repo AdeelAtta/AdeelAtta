@@ -8,8 +8,53 @@
 */
 
 
+/*****************************************************************/
+/*****************************************************************/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
 
-/*CSS for Desktop View */
+/* Track */
+::-webkit-scrollbar-track {
+    
+    box-shadow: inset 0 0 5px grey;
+     background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*            background-image: linear-gradient(180deg,#ff8a00,#e52e71);*/
+    background-image: linear-gradient(180deg, #112d4e, #d4a81e);
+    /*            background-image: url("images/pen1.png");*/
+    z-index: 1000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+         
+
+}
+
+hr {
+    border: 0;
+    height: 0;
+    /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+
+hr:after {
+    content: "\00a0";
+
+}
+
+/*****************************************************************/
+/*****************************************************************/
+
+
+
+/*****************************************************************/
+/*CSS for All View */
+/*****************************************************************/
 
 * {
     box-sizing: border-box;
@@ -18,24 +63,39 @@
     text-decoration: none;
 
 
+}
+
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 
 }
 
-body,
+
+
+
 html {
 
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: auto;
     scroll-behavior: smooth;
 
 }
 
-body {
-
-    background-color: #dbe2ef;
-    background: white;
-}
 
 
 .container {
@@ -51,9 +111,9 @@ body {
 
 
 
-
-
-/*            Navigation Bar      */
+/*****************************************************************/
+/* CSS Navigation Bar */
+/****************************************************************/
 
 header {
     overflow: hidden;
@@ -64,7 +124,6 @@ header {
 .nav-main {
     top: 0;
     margin: 0 auto;
-    position: fixed;
     width: 100%;
     height: 70px;
     background-color: #f9f7f7;
@@ -72,6 +131,7 @@ header {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
     z-index: 1000;
     border-bottom: 3px solid silver;
 }
@@ -84,15 +144,17 @@ header {
 
 .btn-toggle-nav {
     visibility: collapse;
-    width: 60px;
-    height: 100%;
-    background-color: #ffffff;
-    background-image: url("toggle.png");
+    width: 50px;
+    height: 80%;
+    margin: 1% 1%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("menu.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     cursor: pointer;
-    border-radius: 50%;
+
+    /*    border-radius: 50%;*/
 }
 
 .nav-main ul {
@@ -105,40 +167,40 @@ header {
 }
 
 .nav-main ul li {
-    padding-left: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     list-style: none;
     line-height: 60px;
+    margin-left: 10px;
 }
 
 .nav-main ul li a {
-
     display: block;
     margin: 10px 0 0px 0;
     height: 50%;
     padding: 0px 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: arial;
     color: #111;
-    font-size: 16px;
+    font-size: 1.2rem;
     transition: all 0.3s ease-out-in;
 }
 
 .nav-main ul li a:hover {
 
-    font-weight: bold;
-    color: #d4a81e;
+    transform: scale(1.1);
+    color: #ff7400;
 
 
 }
 
 .nav-main ul li a::after {
     content: '';
-    margin: -5px auto;
+    margin: -8px auto;
     display: block;
-    width: 0;
-    height: 5px;
-    background: #d4a81e;
+    width: 0px;
+    height: 4px;
+    background: #ff7400;
     transition: width .3s;
     color: #f97304;
 
@@ -147,8 +209,8 @@ header {
 .nav-main ul li a:hover::after {
 
     width: 100%;
-    color: #f97304;
-    /*    transition: width .3s;*/
+    color: #ff7400;
+
 
 }
 
@@ -186,7 +248,6 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-family: arial;
     font-size: 16px;
     white-space: nowrap;
     opacity: 0;
@@ -204,6 +265,9 @@ header {
 
 
 
+/*****************************************************************/
+/* CSS Hero IMAGE  */
+/****************************************************************/
 
 
 
@@ -229,8 +293,11 @@ header {
 
 
 
+/*****************************************************************/
+/* CSS For TAB Section Links */
+/****************************************************************/
 
-/*               Section     Links     Start           */
+
 
 .container .tab-menu {
     margin: 0 10%;
@@ -305,9 +372,10 @@ header {
 
 
 
+/*****************************************************************/
+/* CSS For Upcomming Events &b News Updates */
+/****************************************************************/
 
-
-/*         Section Upcomming Events &     News  Updates   */
 
 .update-section {
 
@@ -351,7 +419,6 @@ header {
 
     font-size: 2em;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
     padding: 0 0 15px 0;
     margin: 0 0 5% 0;
     background-image: url(images/line.png);
@@ -395,7 +462,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
-    font-family: 'Raleway', sans-serif;
+
 
 }
 
@@ -403,14 +470,13 @@ header {
 
     font-size: 14px;
     color: #484848;
-    font-family: 'Raleway', sans-serif;
+
     letter-spacing: 2px;
 }
 
 .update-section .container .row .upcomming-events .event-box .details p {
 
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
     line-height: 20px;
     color: #6F6F6F;
     text-align: justify;
@@ -418,7 +484,7 @@ header {
 
 .update-section .container .row .news-section .news-box {
 
-    min-height: 80%;
+    max-height: 80%;
 
 
 
@@ -471,8 +537,10 @@ header {
 }
 
 
+/*****************************************************************/
+/* CSS For Course Scheme / Timetable / Course Material / Pastpapers  */
+/*****************************************************************/
 
-/*     Section Course Material/ Books / Notes /Slides / Past Papers     START    */
 
 
 .services {
@@ -492,7 +560,7 @@ header {
 
     text-align: center;
     height: auto;
-    
+
 
 
 
@@ -502,7 +570,8 @@ header {
     color: #3f72af;
     width: 90%;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+
+
     padding: 0 0 15px 0;
     margin: 0px auto 20px;
     font-size: 40px;
@@ -517,12 +586,13 @@ header {
 .services .container .row {
     width: 100%;
     margin: auto;
-    height:450px;
+    height: 450px;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     overflow: hidden;
-    
+    margin-top: 5%;
+
 
 
 
@@ -533,27 +603,25 @@ header {
     width: 25%;
     height: 700px;
     text-align: center;
-    padding-top: 70px;  
+    padding-top: 70px;
 }
 
 
-.services .container .row .box:nth-child(1) {
+.services .container .row .box:first-child {
+    
     background: linear-gradient(hsla(213, 47%, 47%, 0.7), hsla(213, 47%, 47%, 0.7)), url(images/img1.jpg);
-
-}
-
-.services .container .row .box:nth-child(1),
-.services .container .row .box:nth-child(2),
-.services .container .row .box:nth-child(3) {
-    transform: skewY(4deg);
-    margin-top: 1%;
-    background-size: cover;
+     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    transform: skewY(4deg);
+    margin-top: 1%;
 }
+
+
 
 .services .container .row .box:nth-child(2) {
     margin: 2.8% 0 0 0;
+    transform: skewY(4deg);
     background: linear-gradient(hsla(45, 75%, 47%, 0.7), hsla(55, 60%, 44%, 0.7)), url(images/img2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -563,6 +631,7 @@ header {
 
 .services .container .row .box:nth-child(3) {
     margin: 4.5% 0 0 0;
+    transform: skewY(4deg);
     background: linear-gradient(hsla(195, 61%, 46%, 0.7), hsla(195, 61%, 46%, 0.7)), url(images/img3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -584,7 +653,7 @@ header {
 
     padding: 20px;
     transform: skewY(-4deg);
-    
+
 }
 
 .services .container .row .box:nth-child(1) .content {
@@ -615,7 +684,7 @@ header {
     margin: 30px auto;
     text-transform: uppercase;
     font-weight: 600;
-    
+
     color: white;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -650,8 +719,8 @@ header {
 }
 
 .services .container .row .box button {
-    
-   
+
+
     color: #881125;
     border: none;
     border-radius: 5px;
@@ -671,8 +740,10 @@ header {
 
 
 
+/*****************************************************************/
+/* Social Colab Account */
+/*****************************************************************/
 
-/*           **********Social Colab Account*********               */
 
 .social-colab-account {
     margin-top: 10%;
@@ -706,7 +777,7 @@ header {
     color: #3f72af;
     width: 90%;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+
     padding: 0 0 15px 0;
     margin: 0px auto 20px;
     font-size: 40px;
@@ -791,7 +862,6 @@ header {
 }
 
 
-.flip-box-back h1 {}
 
 
 
@@ -805,10 +875,13 @@ header {
 
 
 
+/*****************************************************************/
 /*    Footer    */
+/*****************************************************************/
+
 
 footer {
-    font-family: "Montserrat", sans-serif;
+
     margin-top: 200px;
     width: 100%;
     height: auto;
@@ -840,30 +913,31 @@ footer .container .row {
 
 footer .container .row .about {
     flex: 1.5;
-    
+
 
 }
 
-footer .container .row .quicklinks{
-    
+footer .container .row .quicklinks {
+
     display: flex;
 }
 
-footer .container .row .about{
-    
+footer .container .row .about {
+
     text-align: center;
-    
+
 }
 
-footer .container .row .about p{
+footer .container .row .about p {
     font-size: 1em;
     text-align: justify;
     padding: 0 20px;
     margin: -6% auto;
     max-width: 700px;
-    
-    
+
+
 }
+
 footer .container .row .about img,
 .row .about a {
 
@@ -878,7 +952,7 @@ footer .container .row .navigation,
 }
 
 footer .container .row h2 {
-    font-family: "Oswald", sans-serif;
+
     color: #FF5F21;
     font-size: 24px;
     font-weight: 400;
@@ -926,77 +1000,34 @@ footer .footer-bottom-area a {
 }
 
 
+/*****************************************************************/
+/*****************************************************************/
 
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   1167px      */
 
+/*****************************************************************/
+/*****************************************************************/
 
+@media only screen and (min-width: 1167px) {
+    .services .container .row .box button {
 
+        margin-top: 9%;
+    }
 
+}
 
+/*****************************************************************/
+/*****************************************************************/
 
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   1024px      */
+                   /*  Maximum   1100px      */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CSS for Mobile View */
+/*****************************************************************/
+/*****************************************************************/
 
 @media only screen and (max-width: 1100px) {
 
@@ -1017,17 +1048,31 @@ footer .footer-bottom-area a {
     }
 
 
+    .services .container .row .box .content h2 span {
+        font-size: 0.8em;
 
+    }
 
 }
 
+/*****************************************************************/
+/*****************************************************************/
 
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   768px      */
+                   /*  Maximum  1024px      */
+
+/*****************************************************************/
+/*****************************************************************/
 
 @media only screen and (max-width: 1024px) {
-/*   **************     MAIN Navigation Menu     ***************    */
-     .main-nav {
+
+    /*   **************     MAIN Navigation Menu     ***************    */
+    .main-nav {
         justify-content: space-around;
     }
+
     .nav-main ul {
         display: none;
         visibility: collapse;
@@ -1050,184 +1095,308 @@ footer .footer-bottom-area a {
     .nav-sidebar ul li a {
         visibility: visible;
     }
-/********************************/
-    
-    
-/*   **************     Quick TAB Menu    ***************    */     
- .container .tab-menu{
+
+    /********************************/
+
+
+    /*   **************     Quick TAB Menu    ***************    */
+    .container .tab-menu {
         margin: 0;
-        width: 100%; 
-    }    
-/*******************************/       
-    
-    
-/*   **************     Services  /  Academic Resources    ***************    */    
-    .services .container h1{
+        width: 100%;
+    }
+
+    /*******************************/
+
+
+    /*   **************     Services  /  Academic Resources    ***************    */
+    .services .container h1 {
         margin-bottom: 20px;
     }
-    
+
     .services .container .row .box .content {
-     padding: 0 5px;
+        padding: 0 5px;
     }
-    
+
     .services .container .row .box h2 span {
         font-size: 1.15rem;
     }
-    
-    .services .container .row .box button{
-        
-    padding: .6rem .6rem .6rem .6rem;
+
+    .services .container .row .box button {
+
+        padding: .6rem .6rem .6rem .6rem;
     }
-/********************************/   
-    
-    
-    
-    
-/*   **************     Footer Content    ***************    */      
 
-    footer .container .row {   
-        display: block; 
-        margin: auto;
-    }  
-    
-footer .container .row .quicklinks{
-    margin: 80px auto 0;
-    padding-left: 45px;
-    
-}
-/********************************/
+    /********************************/
 
 
 
 
+    /*   **************     Footer Content    ***************    */
 
-@media only screen and (max-width: 768px) {
-    
-    
-    
-     
-/*   **************     Quick TAB Menu    ***************    */     
- .container .tab-menu ul li:nth-child(5) ,
- .container .tab-menu ul li:nth-child(6) ,
- .container .tab-menu ul li:nth-child(7) ,
- .container .tab-menu ul li:nth-child(8){
-
-     display: none;
-     
-    }    
-/*******************************/    
-    
-    .update-section .container .row .upcomming-events{
-        
-        
-    }  
-    
-    .update-section .container .row .upcomming-events .event-box {
+    footer .container .row {
         display: block;
-        text-align: center;
-        
-    }   
-    .update-section .container .row .upcomming-events .event-box img {
-       width: 90%;
-        height: auto;
-    }
-    .update-section .container .row .news-section .news{
-        margin-bottom: 15px;
-    width: 100%;
-        
-    }
-    
-    
-    
-    
- /*******************************/   
-   
-    .services .container .row{
-        
-     display: block;
-     overflow: visible;
-     height: auto;
-        margin-top: 3em;
-    
-    }
-    .services .container .row .box{
-        
-       width: 100%; 
-        height: 600px;
-       
-       
-        
-    }
-      .services .container .row .box:nth-child(2),
-      .services .container .row .box:nth-child(4){
-        transform: skewY(-4deg);
-    }
-   
-    .services .container .row .box:nth-child(1),
-    .services .container .row .box:nth-child(3){
-        margin-bottom: -4.3em;
-        
-    }
-     .services .container .row .box:nth-child(2){
-        margin-bottom: -5.7em;  
-    }
-    
-    
-    .services .container .row .box:nth-child(2) .content, 
-    .services .container .row .box:nth-child(4) .content{
-        
-        transform: skewY(4deg);
-        
-    } 
-    .services .container .row .box:nth-child(1) .content{
-        margin-top: -2rem;
-    } 
-    .services .container .row .box .content{ 
-        width: 90%;
-        height: 500px;
         margin: auto;
-        padding-top: 5rem;
-        
-        
     }
-    .services .container h1 span{
-        font-size:35px; 
+
+    footer .container .row .quicklinks {
+        margin: 80px auto 0;
+        padding-left: 45px;
+
     }
-   
-    .services .container .row .box .content img{
-        height: 95px;
-        width: 95px;
-       
-        
+
+
+
+
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   600px      */
+                   /*  Maximum   768px      */
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+
+
+
+    @media only screen and (max-width: 768px) {
+
+
+
+
+        /*   **************     Quick TAB Menu    ***************    */
+        .container .tab-menu ul li:nth-child(5),
+        .container .tab-menu ul li:nth-child(6),
+        .container .tab-menu ul li:nth-child(7),
+        .container .tab-menu ul li:nth-child(8) {
+
+            display: none;
+
+        }
+
+        /*******************************/
+
+        .update-section .container .row .upcomming-events {}
+
+        .update-section .container .row .upcomming-events .event-box {
+            display: block;
+            text-align: center;
+
+        }
+
+        .update-section .container .row .upcomming-events .event-box img {
+            width: 90%;
+            height: auto;
+        }
+
+        .update-section .container .row .news-section .news {
+            margin-bottom: 15px;
+            width: 100%;
+
+        }
+
+
+
+
+        /*******************************/
+
+        .services .container .row {
+
+            display: block;
+            overflow: visible;
+            height: auto;
+            margin-top: 3em;
+
+        }
+
+        .services .container .row .box {
+
+            width: 100%;
+            height: 600px;
+
+
+
+        }
+
+        .services .container .row .box:nth-child(2),
+        .services .container .row .box:nth-child(4) {
+            transform: skewY(-4deg);
+        }
+
+        .services .container .row .box:nth-child(1),
+        .services .container .row .box:nth-child(3) {
+            margin-bottom: -4.7em;
+
+        }
+
+        .services .container .row .box:nth-child(2) {
+            margin-bottom: -5.7em;
+        }
+
+
+        .services .container .row .box:nth-child(2) .content,
+        .services .container .row .box:nth-child(4) .content {
+
+            transform: skewY(4deg);
+
+        }
+
+        .services .container .row .box:nth-child(1) .content {
+            margin-top: -2rem;
+        }
+
+        .services .container .row .box .content {
+            width: 90%;
+            height: 500px;
+            margin: auto;
+            padding-top: 5rem;
+
+
+        }
+
+        .services .container h1 span {
+            font-size: 35px;
+        }
+
+        .services .container .row .box .content img {
+            height: 95px;
+            width: 95px;
+
+
+        }
+
+        .services .container .row .box .content h2 {
+            margin-top: 20px;
+
+        }
+
+        .services .container .row .box .content h2 span {
+            font-size: 1.3em
+        }
+
+        .services .container .row .box .content p {
+            height: auto;
+
+
+            font-size: 21px;
+
+        }
+
+        .services .container .row .box button {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+
+
+        footer .container .row .quicklinks {
+
+            padding: 0;
+        }
+
+
+
     }
-   
-    .services .container .row .box .content h2 {
-        margin-top: 20px;
-        
+
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   500px      */
+                   /*  Maximum   600px      */
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+    @media only screen and (max-width: 600px) {
+
+
+        .services .container .row .box:nth-child(1) {
+            margin-bottom: -3.7em;
+        }
+
+        .services .container .row .box:nth-child(2) {
+            margin-bottom: -4.5em;
+        }
+
+        .services .container .row .box:nth-child(3) {
+            margin-bottom: -3.7em;
+        }
+
     }
-    .services .container .row .box .content h2 span{
-         font-size: 1.3em       
-   
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   400px      */
+                   /*  Maximum   500px      */
+
+    /*****************************************************************/
+    /*****************************************************************/
+    @media only screen and (max-width: 500px) {
+
+        .services .container .row .box:nth-child(1) {
+            margin-bottom: -3em;
+        }
+
+        .services .container .row .box:nth-child(2) {
+            margin-bottom: -3.6em;
+        }
+
+        .services .container .row .box:nth-child(3) {
+            margin-bottom: -3em;
+        }
+
     }
-    
-    .services .container .row .box .content p{
-        height: auto;
-        
-       
-        font-size: 21px;
-        
+
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+                   /*CSS for Mobile View    */
+                   /*         Width         */
+                   /*  Minimum   0          */
+                   /*  Maximum   400px      */
+
+    /*****************************************************************/
+    /*****************************************************************/
+
+    @media only screen and (max-width: 400px) {
+
+        .update-section .container .row h2 {
+
+            font-size: 1.5em;
+        }
+
+
+        .services .container h1 span {
+
+            font-size: 1em;
+        }
+
+        .services .container .row .box {
+            margin-bottom: -1em;
+            padding-top: 1px;
+        }
+
+        .services .container .row .box:nth-child(2) {
+            margin-bottom: -2.9em;
+        }
+
+        .services .container .row .box:nth-child(3) {
+            margin-bottom: -2.5em;
+        }
+
+        .social-colab-account .container h1 span {
+            font-size: 36px;
+        }
+
+
     }
-  
-    .services .container .row .box button{
-        font-size: 30px;
-        margin-top: 20px;
-    }
-    
-    footer .container .row .quicklinks{
-        
-        padding: 0;
-    }
-  
-    
-    
-}
