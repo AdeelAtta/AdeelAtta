@@ -632,7 +632,7 @@ header {
 .services .container .row .box:nth-child(3) {
     margin: 4.5% 0 0 0;
     transform: skewY(4deg);
-    background: linear-gradient(hsla(195, 61%, 46%, 0.7), hsla(195, 61%, 46%, 0.7)), url(images/img3.JPG);
+    background: linear-gradient(hsla(195, 61%, 46%, 0.7), hsla(195, 61%, 46%, 0.7)), url(images/img3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -643,7 +643,7 @@ header {
 
     margin: 2.8% 0 0 0;
     transform: skewY(-12deg);
-    background: linear-gradient(hsla(350, 97%, 12%, 0.7), hsla(350, 97%, 12%, 0.7)), url(images/img4.JPG);
+    background: linear-gradient(hsla(350, 97%, 12%, 0.7), hsla(350, 97%, 12%, 0.7)), url(images/img4.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
