@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AdeelAtta
 - 👀 I’m interested in Web development
-- 🌱 I’m currently learning React
+- 🌱 I’m currently learning Web3
 - 💞️ I’m looking to collaborate on web desigining & development 
 - 📫 How to reach me adeelatta@outlook.com
 
