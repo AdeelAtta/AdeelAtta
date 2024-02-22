@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AdeelAtta
 - 👀 I’m Frontend Web Developer expertize in React & Next js
-- 🌱 I’m currently learning Web3
+- 🌱 I’m currently Exploring different Technologies
 - 💞️ I’m looking to collaborate on web desigining & development 
 - 📫 How to reach me adeelatta2000@gmail.com
 
