@@ -1,10 +1,6 @@
 - 👋 Hi, I’m @AdeelAtta
-- 👀 I’m Frontend Web Developer expertize in React & Next js
-- 🌱 I’m currently Exploring different Technologies
-- 💞️ I’m looking to collaborate on web desigining & development 
-- 📫 How to reach me adeelatta2000@gmail.com
 
-<!---
-AdeelAtta/AdeelAtta is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+As a Software Engineer, I create websites that are robust, responsive, and visually appealing, using MERN stack (HTML, CSS, JS, React, Nodejs, express and Mongodb ) I have developed multiple web projects, following best practices and standards for web development. For instance, I recently worked on a website for a blockchain enthusiast, implementing authentication, display dynamic content, API's Integrations focusing on writing scalable, efficient & clean code using design patterns, code patterns, Data structure and many more.
+
+I'm eager to learn and grow, and I'm currently expanding my knowledge on Generative AI for participating in hackathons. My goal is to utilize my programming, structured data & Algorithm skills on Discovering practical Use Cases by utilizing existing models.
+
