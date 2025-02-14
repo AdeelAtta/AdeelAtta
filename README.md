@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **adeelatta2000@gmail.com**
 
-- ⚡ Fun fact **I think I'm funny.**
+- ⚡ fact **I'm ambivert. start off as reserved, observing the environment and people, before gradually becoming more open and engaging.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
