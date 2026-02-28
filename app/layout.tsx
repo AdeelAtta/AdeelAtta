@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Adeel Atta Portfolio",
     images: [
       {
-        url: "https://adeelatta.dev/images/og-image.png",
+        url: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
         width: 1200,
         height: 630,
         alt: "Adeel Atta - Software engineer with AI expertise",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "Adeel Atta - Software engineer with AI expertise | React, Next.js, AI",
     description:
       "Software engineer with AI expertise building scalable, AI-powered web applications and dashboards using React, Next.js, TypeScript, and modern software engineering practices.",
-    images: ["https://adeelatta.dev/images/og-image.png"],
+    images: ["https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png"],
     creator: "@adeelatta",
   },
   robots: {
