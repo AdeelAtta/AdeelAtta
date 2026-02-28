@@ -20,14 +20,12 @@ const onest = Onest({
 })
 
 export const metadata: Metadata = {
-  title: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
+  title: "Adeel Atta - Software Engineering & Frontend Developer | React Next.js | Scalable Applications | AI Hackathon Winner | Silver Medalist | Serving 30,000+ Users",
   description:
-    "Frontend Engineer based in Pakistan building scalable, AI-powered web applications and dashboards. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
-  keywords: "frontend engineer, react developer, next.js, typescript, web development, ai, full stack",
-  generator: "v0.app",
+    "Software engineering and frontend developer expertise. React Next.js specialist, scalable applications builder, AI hackathon winner, silver medalist, serving 30,000+ users. Experienced in modern web development, TypeScript, and production platforms.",
+  keywords: "software engineering, frontend developer, react nextjs, scalable applications, ai hackathon winner, silver medalist, serving 30000 users, software developer, web applications, users, building, ai engineer, next.js, typescript, web development, ai, full stack, machine learning, artificial intelligence",
   viewport: "width=device-width, initial-scale=1",
   metadataBase: new URL("https://adeelatta.dev"),
-  // canonical: "https://adeelatta.dev",
   authors: [{ name: "Adeel Atta", url: "https://adeelatta.dev" }],
   creator: "Adeel Atta",
   icons: {
@@ -56,23 +54,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://adeelatta.dev",
-    title: "Adeel Atta - Frontend Engineer",
-    description: "Frontend Engineer building scalable, AI-powered web applications. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
+    title: "Adeel Atta - Software engineer with AI expertise",
+    description: "Software engineer with AI expertise building scalable, AI-powered web applications. Expert in React, Next.js, TypeScript, and modern software engineering practices with production experience serving 30,000+ users.",
     siteName: "Adeel Atta Portfolio",
     images: [
       {
         url: "https://adeelatta.dev/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Adeel Atta - Frontend Engineer",
+        alt: "Adeel Atta - Software engineer with AI expertise",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
+    title: "Adeel Atta - Software engineer with AI expertise | React, Next.js, AI",
     description:
-      "Frontend Engineer building scalable, AI-powered web applications and dashboards using React, Next.js, and TypeScript.",
+      "Software engineer with AI expertise building scalable, AI-powered web applications and dashboards using React, Next.js, TypeScript, and modern software engineering practices.",
     images: ["https://adeelatta.dev/images/og-image.png"],
     creator: "@adeelatta",
   },
@@ -100,9 +98,9 @@ export default function RootLayout({
     "@id": "https://adeelatta.dev#person",
     name: "Adeel Atta",
     url: "https://adeelatta.dev",
-    image: "https://adeelatta.dev/images/design-mode/63407fbdc2d4ac5270385fd4_home-he.png",
-    description: "Frontend Engineer building scalable, AI-powered web applications. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
-    jobTitle: "Frontend Engineer",
+    image: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
+    description: "Software engineer with AI expertise from Pakistan building scalable, AI-powered web applications. Expert in React, Next.js, TypeScript, and modern software engineering practices with production experience serving 30,000+ users.",
+    jobTitle: "Software engineer with AI expertise",
     email: "adeelatta2000@gmail.com",
     sameAs: [
       "https://github.com/AdeelAtta",
@@ -118,6 +116,18 @@ export default function RootLayout({
       "Design Systems",
       "API Integration",
     ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Adeel Atta",
+      url: "https://adeelatta.dev",
+      logo: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Business Development",
+      email: "adeelatta2000@gmail.com",
+      telephone: "+92-303-2727095",
+    },
   }
 
   const organizationSchema = {
@@ -126,8 +136,8 @@ export default function RootLayout({
     "@id": "https://adeelatta.dev#organization",
     name: "Adeel Atta",
     url: "https://adeelatta.dev",
-    logo: "https://adeelatta.dev/images/logo.png",
-    description: "Frontend Engineer and Web Developer",
+    logo: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
+    description: "Software engineer with AI expertise and Web Developer from Pakistan",
     sameAs: [
       "https://github.com/AdeelAtta",
       "https://www.linkedin.com/in/adeel-atta/",
@@ -136,6 +146,7 @@ export default function RootLayout({
       "@type": "ContactPoint",
       contactType: "Business Development",
       email: "adeelatta2000@gmail.com",
+      telephone: "+92-303-2727095",
     },
   }
 
@@ -171,17 +182,17 @@ export default function RootLayout({
     url: "https://adeelatta.dev",
     inLanguage: "en",
     description:
-      "Portfolio of Adeel Atta, a Frontend Engineer specializing in React, Next.js, TypeScript, and AI-powered web applications.",
+      "Portfolio of Adeel Atta, a software engineer with AI expertise specializing in React, Next.js, TypeScript, and AI-powered web applications.",
   }
 
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
+    name: "Adeel Atta - Software engineer with AI expertise | React, Next.js, AI",
     url: "https://adeelatta.dev",
     inLanguage: "en",
     description:
-      "Frontend Engineer based in Pakistan building scalable, AI-powered web applications and dashboards with React, Next.js, and TypeScript.",
+      "Software engineer with AI expertise based in Pakistan building scalable, AI-powered web applications and dashboards with React, Next.js, TypeScript, and modern software engineering practices.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://adeelatta.dev",
@@ -192,10 +203,29 @@ export default function RootLayout({
     },
   }
 
+      const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Adeel Atta",
+        "url": "https://adeelatta.dev",
+        "description": "Remote software engineer with AI expertise, available for global projects.",
+        "telephone": "+92-303-2727095",
+        "email": "adeelatta2000@gmail.com",
+        "image": "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Business Development",
+          "telephone": "+92-303-2727095",
+          "email": "adeelatta2000@gmail.com"
+        },
+        // No address field as user works remotely
+      }
+
   return (
     <html lang="en">
       <head>
         <meta name="msvalidate.01" content="F263C1A14AD1A34C4F0D1BA10E0D156F" />
+        <link rel="canonical" href="https://adeelatta.dev" />
         <Script
           id="person-schema"
           type="application/ld+json"
@@ -206,6 +236,12 @@ export default function RootLayout({
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
           strategy="afterInteractive"
         />
         <Script

@@ -5,8 +5,8 @@ import Image from "next/image"
 export function ServicesSection() {
   const primarySkills = [
     {
-      title: "React & Next.js",
-      description: "Building performant, SEO-friendly applications with server-side rendering, static generation, and the latest React patterns.",
+      title: "AI & Software Engineering",
+      description: "Building intelligent, scalable applications with AI, React, Next.js, and modern software engineering practices as a software engineer with AI expertise.",
       image: "/images/web-design.svg",
     },
     {

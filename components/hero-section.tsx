@@ -7,13 +7,13 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h1 className="text-[42px] leading-12.5 md:text-[72px] font-bold md:leading-21.25">
-            I'm <span className="bg-[#FF6B7A] text-white px-3 py-1 inline-block">Adeel Atta</span>, a Frontend Engineer building{" "}
+            I'm <span className="bg-[#FF6B7A] text-white px-3 py-1 inline-block">Adeel Atta</span>, a Software Engineer building{" "}
             <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">AI-Powered</span> Apps
           </h1>
 
-          <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-7 md:leading-7.5 max-w-xl">
-            I build scalable, user-centric web applications with React, Next.js, and TypeScript. From production platforms serving 30,000+ users to innovative AI tools and browser extensions.
-          </p>
+          <h5 className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-7 md:leading-7.5 max-w-xl">
+            As a software developer, I specialize in building scalable web applications and software solutions for thousands of users. My expertise includes React, Next.js, TypeScript, and AI-powered platforms, with experience in production systems, browser extensions, and modern web development.
+          </h5>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-7 pt-4">
             <a href="mailto:adeelatta2000@gmail.com">

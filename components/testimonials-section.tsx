@@ -57,7 +57,7 @@ export function TestimonialsSection() {
             <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">achievements</span>
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto pb-8">
-            Recognition from hackathons, competitions, and academic excellence in software engineering.
+            Recognition from hackathons, competitions, and academic excellence as a software engineer with AI expertise.
           </p>
         </div>
 

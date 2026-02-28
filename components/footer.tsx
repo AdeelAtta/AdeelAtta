@@ -100,6 +100,16 @@ export function Footer() {
                     Experience
                   </a>
                 </li>
+                  <li>
+                    <a href="/privacy-policy" className="hover:text-white transition-colors">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/terms-of-service" className="hover:text-white transition-colors">
+                      Terms of Service
+                    </a>
+                  </li>
               </ul>
             </div>
 

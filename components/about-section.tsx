@@ -8,7 +8,7 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div className="flex justify-center">
           <div className="relative w-full max-w-lg aspect-square border-4 border-black rounded-full overflow-hidden bg-[#FF6B6B] shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <Image src="/images/Gemini_Generated_Image_aboutme.png" alt="Adeel Atta - Frontend Engineer profile" fill className="object-cover" />
+            <Image src="/images/Gemini_Generated_Image_aboutme.png" alt="Adeel Atta - Software engineer with AI expertise profile" fill className="object-cover" />
           </div>
         </div>
 
@@ -18,7 +18,7 @@ export function AboutSection() {
               Building products that <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">scale</span>
             </h2>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Software Engineer and Frontend Developer with deep expertise in React, Next.js, and TypeScript. I've shipped production applications serving over 30,000 users, built browser extensions, and contributed to AI-powered and Web3 products. Gold and Silver Medalist in Software Engineering with a passion for clean, scalable, user-centric systems.
+              Software engineer with AI expertise, deep knowledge of React, Next.js, TypeScript, and modern software engineering. I've shipped production applications serving over 30,000 users, built browser extensions, and contributed to AI-powered and Web3 products. Gold and Silver Medalist in Software Engineering with a passion for clean, scalable, user-centric systems and artificial intelligence.
             </p>
           </div>
 

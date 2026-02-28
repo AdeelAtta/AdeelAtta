@@ -8,7 +8,7 @@ export function ArticlesSection() {
     <section className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Articles & News</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Articles & News from a Software Engineer with AI Expertise</h2>
           <Button
             variant="outline"
             className="border-[3px] border-black rounded-xl px-4 md:px-6 py-4 md:py-6 hover:bg-gray-50 bg-white font-semibold text-sm md:text-base w-full sm:w-auto"

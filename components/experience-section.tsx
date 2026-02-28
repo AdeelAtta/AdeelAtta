@@ -39,7 +39,7 @@ export function ExperienceSection() {
               Work <span className="bg-[#6366F1] text-white px-3 py-1 inline-block">experience</span>
             </h2>
             <p className="text-gray-400 mb-8 md:mb-10 leading-relaxed text-base md:text-lg">
-              Building production-scale applications with modern frontend technologies. Focused on creating scalable, performant, and user-centric interfaces.
+              Building production-scale applications as a software engineer with AI expertise. Focused on creating scalable, performant, and user-centric interfaces powered by AI and modern technologies.
             </p>
             <a href="https://www.linkedin.com/in/adeel-atta/" target="_blank" rel="noopener noreferrer">
               <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-5.5 md:px-15.5 text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-60">

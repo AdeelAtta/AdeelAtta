@@ -7,7 +7,7 @@ export function PortfolioSection() {
     {
       title: "Mentalyc Web App",
       description:
-        "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users.",
+        "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users. worked as Frontend Focused software engineer.",
       tag: "AI / Healthcare",
       logo: "/images/studio-logo.svg",
       bgColor: "bg-[#F5E6E0]",
@@ -75,7 +75,7 @@ export function PortfolioSection() {
                   operatingSystem: "Any",
                   url: "https://mentalyc.com",
                   description:
-                    "AI-powered mental health web application where I contributed to the design system, feature implementation, and performance optimization for 30,000+ active users.",
+                    "AI-powered mental health web application where I contributed to the design system, feature implementation, and performance optimization for 30,000+ active users. Led as a software engineer with AI expertise.",
                   author: {
                     "@type": "Person",
                     name: "Adeel Atta",
@@ -90,7 +90,7 @@ export function PortfolioSection() {
                   operatingSystem: "Chrome",
                   url: "https://chrome.google.com/webstore/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj",
                   description:
-                    "Chrome extension that automates clinical note transfer to EHR systems via secure API integration, streamlining therapist workflows.",
+                    "Chrome extension that automates clinical note transfer to EHR systems via secure API integration, streamlining therapist workflows. Developed by a software engineer with AI expertise.",
                   author: {
                     "@type": "Person",
                     name: "Adeel Atta",
