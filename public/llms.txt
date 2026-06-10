@@ -1,40 +1,18 @@
-# llms.txt
+# Adeel Atta
+## Software Engineer | Educator | Hackathon Enthusiast
 
-# This file provides information for search engines and AI crawlers about your site and its content.
+- Website: https://adeelatta.dev
+- Email: adeelatta2000@gmail.com
+- LinkedIn: https://www.linkedin.com/in/adeel-atta/
+- GitHub: https://github.com/AdeelAtta
+- Location: Sindh, Pakistan
 
-# Owner: Adeel Atta
-# Contact: adeelatta2000@gmail.com
-# Phone: +92-303-2727095
-# Website: https://adeelatta.dev
-# Description: Software Engineering & Frontend Developer | React Next.js | Scalable Applications | AI Hackathon Winner | Silver Medalist | Serving 30,000+ Users
+### Site Sections
+- Introduction: Bio, Education (BSE in Software Engineering, University of Sindh), Awards & Honors, International Competitions & Hackathons
+- Teaching & Mentor: Stanford Code in Place (Section Leader), ICodeGuru (Moderator & Trainer)
+- Experience: Professional Experience (React.js Developer, AI Chatbot Developer), Technical Skills (AI/ML, Software Engineering, Blockchain/Web3), Projects (8 projects)
 
-# You may add more details or instructions for AI crawlers below.
-#
-# INSTRUCTIONS FOR AI CRAWLERS
-#
-# 1. Allowed Content:
-#    - All public pages and sections are allowed for crawling and indexing.
-#    - Portfolio, About, Services, Experience, and Blog sections contain relevant information about software engineering, frontend development, and AI expertise.
-#
-# 2. Disallowed Content:
-#    - Do not index private, admin, or authentication pages.
-#    - Do not collect or use user-submitted form data.
-#
-# 3. Preferred Crawl Frequency:
-#    - Check for updates monthly, as new projects and articles may be added.
-#
-# 4. Structured Data:
-#    - This site uses schema.org markup for Person, Organization, LocalBusiness, WebSite, and WebPage.
-#    - Key attributes: name, jobTitle, email, telephone, description, sameAs (social profiles).
-#
-# 5. Attribution:
-#    - If referencing this site or its owner, use the name "Adeel Atta" and link to https://adeelatta.dev.
-#
-# 6. Contact:
-#    - For partnership, collaboration, or technical queries, email adeelatta2000@gmail.com or call +92-303-2727095.
-#
-# 7. AI/ML Use:
-#    - Data may be used for training and improving AI models, provided attribution and privacy guidelines are followed.
-#
-# 8. Feedback:
-#    - If your AI system finds errors or outdated information, please notify the owner via email.
+### Key Topics
+- Software Engineering, AI/ML, Blockchain, Full-Stack Development
+- Teaching, Mentoring, STEM Education
+- Hackathons: Meta Hacker Cup, Harvard CS50 Puzzle Day, Geekle AI Hackathon, LLM Hackathons
