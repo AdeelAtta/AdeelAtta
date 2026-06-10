@@ -74,7 +74,7 @@ export function Sidebar() {
       </div>
 
       {/* Download CV */}
-      <div className="pt-2 text-center md:text-left">
+      {/* <div className="pt-2 text-center md:text-left">
         <a
           href="/resume.pdf"
           target="_blank"
@@ -82,7 +82,7 @@ export function Sidebar() {
         >
           Download CV (PDF)
         </a>
-      </div>
+      </div> */}
     </aside>
   )
 }
