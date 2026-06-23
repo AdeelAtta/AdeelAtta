@@ -243,8 +243,8 @@ function TeachingContent() {
             title: "Section Leader",
             org: "Stanford: Code in Place",
             period: "Apr 2026 – continue",
-            desc: "Led a section of 10+ students through Stanford's introductory programming course, conducting sessions on core concepts, debugging, and computational problem-solving.",
-            link: "https://codeinplace.stanford.edu/",
+            desc: "Led a section of students through Stanford's introductory programming course (CS106A), conducting sessions on core concepts, debugging, and computational problem-solving.",
+            link: "https://digitalcredential.stanford.edu/check/DCEA26E01D4AEB0135625A3474AD6C39544208D663C16CCC87A5244F220D1757czIwWG1GVWV5WUVzbzVaNnBFTlBtOGhlS3I1cTV2dTg4bUVQZkJaWDV3cGZqM05V",
           },
           {
             title: "Moderator & Trainer",
